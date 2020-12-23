@@ -12,7 +12,8 @@ def encode_onehot(labels):
     return labels_onehot
 
 
-def load_data(path="../data/cora/", dataset="cora"):
+def load_data(path="./data/cora/", dataset="cora"):
+    #当前工作目录是train.py所在的文件夹。
     """Load citation network dataset (cora only for now)"""
     print('Loading {} dataset...'.format(dataset))
 
